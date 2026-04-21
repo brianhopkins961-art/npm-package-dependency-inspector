@@ -13,7 +13,7 @@ export async function fetchNpmMetrics(packageName, signal) {
   const meta = await metaRes.json();
   const dl = await dlRes.json();
 
-  const latest = meta?.["dist-tags"]?.latest;
+  cont latest = meta?.["dist-tags"]?.latest;
   const version = meta?.versions?.[latest];
 
   if (!latest || !version) {
