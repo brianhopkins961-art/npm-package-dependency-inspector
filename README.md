@@ -1,16 +1,23 @@
-# React + Vite
+# NPM Package Dependency Inspector
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a lightweight web application that allows users to search for any npm package and view the following metadata:
 
-Currently, two official plugins are available:
+    -Current version
+    -License type
+    -Weekly download count
+    -Number of dependencies
+    -Unpacked size
+    -Date of last publish
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Docker
+To set this up using docker:
+    1. clone the repo using git clone https://github.com/brianhopkins961-art/npm-package-dependency-inspector.git 
+    2. cd npm-package-dependency-inspector
+    3. docker-compose up
+    4. open http://localhost:3000/ in browser
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Key Design Choices
+    -React was chosen as the frontend because it is flexable and easy to use
+    -Vite was used because it uses Hot Module Replacement and is fast
+    -API calls are isolated into a dedicated hook/module in order to separate concerns of ui and logic
+    
