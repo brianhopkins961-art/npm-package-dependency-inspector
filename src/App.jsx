@@ -17,7 +17,7 @@ export default function App() {
 
       <form onSubmit={handleSubmit}>
         <input
-          value={input}
+          value={input
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter package name"
           style={{ padding: 8 }}
