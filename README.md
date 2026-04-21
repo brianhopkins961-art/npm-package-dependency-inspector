@@ -11,10 +11,10 @@ This project is a lightweight web application that allows users to search for an
 
 # Docker
 To set this up using docker:
-    1. clone the repo using git clone https://github.com/brianhopkins961-art/npm-package-dependency-inspector.git 
-    2. cd npm-package-dependency-inspector
-    3. docker-compose up
-    4. open http://localhost:3000/ in browser
+    -1. clone the repo using git clone https://github.com/brianhopkins961-art/npm-package-dependency-inspector.git 
+    -2. cd npm-package-dependency-inspector
+    -3. docker-compose up
+    -4. open http://localhost:3000/ in browser
 
 # Key Design Choices
     -React was chosen as the frontend because it is flexable and easy to use
